@@ -15,7 +15,7 @@ function EmployeeList() {
   const fetchData = async () => {
     try {
       const { data, status } = await axios.get(
-        "http://localhost:5000/employeelist"
+        "https://dealsdray-admintask.onrender.com/employeelist"
       );
       if (status === 200) {
         setList(data.data); // Update the employee list in state
@@ -34,7 +34,7 @@ function EmployeeList() {
   const handleDelete = async (id) => {
     try {
       const response = await axios.delete(
-        `http://localhost:5000/employeelist/${id}`
+        `https://dealsdray-admintask.onrender.com/employeelist/${id}`
       );
       if (response.status === 200) {
         // Remove the deleted employee from the list in the UI
