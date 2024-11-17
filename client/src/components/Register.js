@@ -35,7 +35,7 @@ const Register = () => {
     setError("");
 
     try {
-      const response = await axios.post("http://localhost:5000/register", {
+      const response = await axios.post("https://dealsdray-admintask.onrender.com/register", {
         username: formData.username,
         email: formData.email,
         password: formData.password,
