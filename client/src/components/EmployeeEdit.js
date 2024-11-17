@@ -20,11 +20,11 @@ function EmployeeEdit() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    fetchEmployeeData();
+    fetchEmployeeData(id);
   }, [id]);
 
   // Fetch existing employee data by ID
-  const fetchEmployeeData = async () => {
+  const fetchEmployeeData = async (id) => {
     try {
       const response = await axios.get(
         `https://dealsdray-admintask.onrender.com/employeelist/${id}`
