@@ -75,7 +75,7 @@ function EmployeeEdit() {
     try {
       // Send updated data to backend
       const response = await axios.put(
-        `http://localhost:5000/employeelist/${id}`,
+        `https://dealsdray-admintask.onrender.com/employeelist/${id}`,
         employee
       );
       if (response.status === 200) {
